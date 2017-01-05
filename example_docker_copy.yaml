@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+    - docker_copy:
+        content='test'
+        volume=test_volume
+        dest=test
+        coreos_toolbox=yes
